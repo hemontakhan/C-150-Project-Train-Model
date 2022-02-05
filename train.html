@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://aframe.io/releases/1.0.4/aframe.min.js'></script>
+</head>
+<body>
+ <a-scene>
+ <a-camera position='0 5 20'></a-camera>
+
+ <a-sky src="https://static.vecteezy.com/system/resources/thumbnails/002/934/656/small/dunes-flat-illustration-sand-desert-exploration-panoramic-egyptian-landscape-arabic-wilderness-african-land-draught-environment-plato-view-mountain-hills-wasteland-cartoon-background-vector.jpg"></a-sky>
+
+ <a-assets>
+ <a-asset-item id='train-obj' src='./Train/tinker.obj'></a-asset-item>
+ <a-asset-item id='train-mtl' src='./Train/obj.mtl'></a-asset-item>
+ </a-assets>
+
+ <a-entity obj-model='obj: #train-obj;mtl: #train-mtl' position='-7 -1 -4'  rotation='-90 -95 0' scale='0.1 0.1 0.1'></a-entity>
+
+ <a-entity >
+ <a-plane position='0 -2 -1' rotation='-90 0 0' height='20' width='100' color='#FDD57F'></a-plane>
+ </a-entity>
+  
+ <a-plane position="0 -1 -1" rotation="-90 0 0" height="2" width="100" color="black"></a-plane>
+ <a-plane position="0 -1 -5" rotation="-90 0 0" height="2" width="100" color="black"></a-plane>
+
+ </a-scene>
+</body>
+</html>
